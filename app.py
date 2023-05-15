@@ -17,6 +17,6 @@ with st.sidebar:
 query = f"continent=='{continent}' & metric=='{metric}'"
 
 df_gdp_o = df.query(query)
-fig = px.line(df_gdp_o, x='year', y='value', color='country', title='GDP for countries in Oceania')
+fig = px.line(df_gdp_o, x='year', y='value', color='country')
 
 st.plotly_chart(fig, use_container_width=True)
